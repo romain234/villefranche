@@ -51,25 +51,7 @@
   </div>
 </div>
 
-<div id="videoOverlay" 
-     style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-            background:rgba(0,0,0,0.8); justify-content:center; align-items:center;">
-
-  <div style="position:relative; width:80%; max-width:900px;">
-    <iframe id="ytPlayer" width="100%" height="500px"
-            src=""
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
-  </div>
-
-  <button onclick="closeVideo()" 
-          style="position:absolute; top:20px; right:20px; font-size:30px;
-                 color:white; background:none; border:none; cursor:pointer;">
-    ✕
-  </button>
-</div>
+<div id="videoOverlay" style="display:none;"></div>
 
 <div id="titleBar">
   <h1 class="sceneName"></h1>
@@ -119,22 +101,13 @@
 
 <script>
 function openVideo(youtubeUrl) {
-  const overlay = document.getElementById("videoOverlay");
-  const player = document.getElementById("ytPlayer");
-
-  // Convertit le lien normal en lien embed
-  const embedUrl = youtubeUrl.replace("watch?v=", "embed/");
-
-  player.src = embedUrl + "?autoplay=1";
-  overlay.style.display = "flex";
+  // Les vidéos 360° doivent s'ouvrir directement sur YouTube pour avoir les contrôles de mouvement 360°
+  // Les iframes standard ne supportent pas les contrôles 360°
+  window.open(youtubeUrl, 'youtube360', 'width=1000,height=800');
 }
 
 function closeVideo() {
-  const overlay = document.getElementById("videoOverlay");
-  const player = document.getElementById("ytPlayer");
-
-  player.src = ""; // stop la vidéo
-  overlay.style.display = "none";
+  // Fermeture automatique via le bouton de fermeture de la fenêtre YouTube
 }
 </script>
 

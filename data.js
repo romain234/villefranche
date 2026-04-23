@@ -118,7 +118,7 @@ var APP_DATA = {
           "yaw": 1.0527244940195715,
           "pitch": 0.21312191010081705,
           "title": "Rue",
-          "text": "<a onclick=\"openVideo('https://www.youtube.com/watch?v=zzzdsURD-iU')\">Voir la vidéo</a>"
+          "text": "<a onclick=\"openVideo('https://www.youtube.com/watch?v=cLENDGV8KEI')\">Voir la vidéo</a>"
         },
         {
           "yaw": -0.7805090216488626,
@@ -214,8 +214,8 @@ var APP_DATA = {
         {
           "yaw": -0.7259182078174415,
           "pitch": -0.043709286882080534,
-          "title": "Calle sèche",
-          "text": "<a onclick=\"openVideo('https://www.youtube.com/watch?v=LJaiEKYRVEE')\">Voir la vidéo</a>"
+          "title": "Cale sèche",
+          "text": "<a onclick=\"openVideo('https://www.youtube.com/watch?v=t504XoIQOAM')\">Voir la vidéo</a>"
         },
         {
           "yaw": -0.17165630723275704,
@@ -301,12 +301,6 @@ var APP_DATA = {
           "pitch": 0.06883743781764196,
           "title": "Hotel de ville",
           "text": "<a onclick=\"openVideo('https://www.youtube.com/watch?v=TBwGXfEVvEY')\">Voir la vidéo</a>"
-        },
-        {
-          "yaw": -0.017484049137150848,
-          "pitch": -0.07299574620958893,
-          "title": "Auditorium",
-          "text": "<a onclick=\"openVideo('lien')\">Voir la vidéo</a>"
         }
       ]
     }
